@@ -15,7 +15,7 @@ const Login = ({setIsAuth}) => {
   }
   return (
     <div className='LoginPage'>
-      <p>Sign In With Google to Continue</p>
+      <p className='loginp'>Sign In With Google to Continue</p>
       <button className='login-with-google-btn' onClick={signInWithGoogle}>
         Sign in with Google
       </button>

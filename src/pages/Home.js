@@ -9,7 +9,7 @@ const Home = ({isAuth}) => {
     const postDoc = doc(db , "posts", id)
     await deleteDoc(postDoc)
   }
-  
+
   useEffect(() => {
     const getPosts = async () => {
       const data = await getDocs(postsCollectionRef)

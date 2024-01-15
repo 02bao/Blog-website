@@ -29,8 +29,9 @@ a {
 .createPostPage {
   width: 100%;
   height: calc(100vh - 80px);
-  display: grid;
-  place-items: center;
+  display:grid;
+  place-items: center;  
+  
 }
 
 .cpContainer {
@@ -42,6 +43,10 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .cpContainer h1 {
@@ -92,10 +97,22 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .loginPage p {
+  display: inline;
   font-size: 30px;
+  align-items: center;
+  
+}
+
+.loginp {
+  position: fixed;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 /* GOOGLE BUTTOn */
@@ -115,6 +132,10 @@ textarea {
   background-color: white;
   background-repeat: no-repeat;
   background-position: 12px 11px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .login-with-google-btn:hover {
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
